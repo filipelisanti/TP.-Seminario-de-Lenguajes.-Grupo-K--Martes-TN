@@ -1,19 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inside.IniciarSesionActivity">
+    tools:context=".inside.IniciarSesionActivity"
+    android:orientation="vertical"
+    android:background="@color/celeste" >
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aca van los datos de los elementos"
+        android:text="CLIMA BUENOS AIRES"
+        android:textSize="25sp"
+        android:background="@color/white"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="LUNES"
+        android:gravity="center"
+        android:background="#CCCC00"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nublado 18C. Mas informacion:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerMasLunes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Ver más" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="MARTES"
+        android:gravity="center"
+        android:background="#CCCC00"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nublado 15C. Mas informacion:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerMasMartes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Ver más"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="MIERCOLES"
+        android:gravity="center"
+        android:background="#CCCC00"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvClima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soleado 21C. Mas informacion:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerMasMiercoles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Ver más"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="JUEVES"
+        android:gravity="center"
+        android:background="#CCCC00"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soleado 23C. Mas informacion:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerMasJueves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Ver más"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="VIERNES"
+        android:gravity="center"
+        android:background="#CCCC00"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semi nublado 17C. Mas informacion:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerMasViernes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Ver más"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="SABADO"
+        android:gravity="center"
+        android:background="#CCCC00"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tormenta electrica 10C. Mas informacion:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerMasSabado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Ver más"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="DOMINGO"
+        android:gravity="center"
+        android:background="#CCCC00"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nublado 18C. Mas informacion:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerMasDomingo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Ver más"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="CERRAR SESION"
+        android:id="@+id/idBtnSalir" />
+
+
+</LinearLayout>

@@ -3,6 +3,7 @@ package com.example.tp.inside
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,10 +22,19 @@ class RegisterActivity : AppCompatActivity() {
             insets
         }
         var btnConfirmar = findViewById<Button>(R.id.btnConfirmar)
+
         btnConfirmar.setOnClickListener { navigateToLogin() }
+
     }
     private fun navigateToLogin(){
+
+        var pass = findViewById<EditText>(R.id.idPasswordRegister)
+        var emValue = findViewById<EditText>(R.id.idEmailRegister)
+        var email = emValue.text.toString()
+        var password = pass.text.toString()
         var intent = Intent(this, LoginActivity::class.java)
+        intent.putExtra("validEmail",email)
+        intent.putExtra("validPass",password)
         startActivity(intent)
     }
 }

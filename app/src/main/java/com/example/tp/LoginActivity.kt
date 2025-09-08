@@ -3,6 +3,8 @@ package com.example.tp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,7 +33,19 @@ class LoginActivity : AppCompatActivity() {
         startActivity(intentRegister)
     }
     private fun navigateToIniciarSesion(){
-        var intent = Intent(this, IniciarSesionActivity::class.java)
-        startActivity(intent)
+        var email1 = findViewById<EditText>(R.id.idUsuario)
+        var emailVerification = intent.extras?.getString("validEmail")
+        var pass1 = findViewById<EditText>(R.id.idPassword)
+        var validPassword = intent.extras?.getString("validPass")
+        if(pass1.text.toString() != validPassword){
+            Toast.makeText(this, "Password no registrado, por favor cree una cuenta", Toast.LENGTH_LONG).show()
+        }
+        else if(email1.text.toString() != emailVerification){
+            Toast.makeText(this, "Email no registrado, por favor cree una cuenta", Toast.LENGTH_LONG).show()
+
+        }else{
+            var intent = Intent(this, IniciarSesionActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

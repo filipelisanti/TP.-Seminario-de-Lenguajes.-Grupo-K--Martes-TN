@@ -41,7 +41,6 @@
         android:layout_margin="10dp"
         android:hint="Password"
         />
-
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

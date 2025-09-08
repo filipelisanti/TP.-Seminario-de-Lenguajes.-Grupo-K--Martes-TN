@@ -5,11 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inside.IniciarSesionActivity"
     android:orientation="vertical"
-    android:background="@color/celeste" >
+    android:background="@color/celeste"
+    tools:context=".inside.IniciarSesionActivity">
 
-
+    <!-- Título fijo arriba -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,263 +17,281 @@
         android:textSize="25sp"
         android:background="@color/white"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="10dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="30sp"
-        android:paddingEnd="30sp"
-        android:paddingTop="5sp"
-        android:paddingBottom="5sp"
-        android:text="LUNES"
-        android:gravity="center"
-        android:background="#CCCC00"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp" />
-
-    <LinearLayout
+    <!-- Scroll con todos los días -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nublado 18C. Mas informacion:"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVerMasLunes"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Ver más" />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="30sp"
-        android:paddingEnd="30sp"
-        android:paddingTop="5sp"
-        android:paddingBottom="5sp"
-        android:text="MARTES"
-        android:gravity="center"
-        android:background="#CCCC00"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp" />
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+            <!-- LUNES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="LUNES"
+                android:gravity="center"
+                android:background="#CCCC00"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nublado 15C. Mas informacion:"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVerMasMartes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Ver más"
-            />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="30sp"
-        android:paddingEnd="30sp"
-        android:paddingTop="5sp"
-        android:paddingBottom="5sp"
-        android:text="MIERCOLES"
-        android:gravity="center"
-        android:background="#CCCC00"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nublado 18C. Mas informacion:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerMasLunes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver más" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvClima"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Soleado 21C. Mas informacion:"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"/>
+            <!-- MARTES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="MARTES"
+                android:gravity="center"
+                android:background="#CCCC00"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVerMasMiercoles"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Ver más"
-            />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="30sp"
-        android:paddingEnd="30sp"
-        android:paddingTop="5sp"
-        android:paddingBottom="5sp"
-        android:text="JUEVES"
-        android:gravity="center"
-        android:background="#CCCC00"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nublado 15C. Mas informacion:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Soleado 23C. Mas informacion:"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerMasMartes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver más" />
+            </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVerMasJueves"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Ver más"
-            />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="30sp"
-        android:paddingEnd="30sp"
-        android:paddingTop="5sp"
-        android:paddingBottom="5sp"
-        android:text="VIERNES"
-        android:gravity="center"
-        android:background="#CCCC00"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp" />
+            <!-- MIERCOLES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="MIERCOLES"
+                android:gravity="center"
+                android:background="#CCCC00"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Semi nublado 17C. Mas informacion:"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/tvClima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soleado 21C. Mas informacion:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVerMasViernes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Ver más"
-            />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="30sp"
-        android:paddingEnd="30sp"
-        android:paddingTop="5sp"
-        android:paddingBottom="5sp"
-        android:text="SABADO"
-        android:gravity="center"
-        android:background="#CCCC00"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerMasMiercoles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver más" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+            <!-- JUEVES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="JUEVES"
+                android:gravity="center"
+                android:background="#CCCC00"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tormenta electrica 10C. Mas informacion:"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVerMasSabado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Ver más"
-            />
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="30sp"
-        android:paddingEnd="30sp"
-        android:paddingTop="5sp"
-        android:paddingBottom="5sp"
-        android:text="DOMINGO"
-        android:gravity="center"
-        android:background="#CCCC00"
-        android:layout_marginTop="25dp"
-        android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soleado 23C. Mas informacion:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="16dp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerMasJueves"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver más" />
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nublado 18C. Mas informacion:"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"/>
+            <!-- VIERNES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="VIERNES"
+                android:gravity="center"
+                android:background="#CCCC00"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVerMasDomingo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Ver más"
-            />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="CERRAR SESION"
-        android:id="@+id/idBtnSalir" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semi nublado 17C. Mas informacion:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
 
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerMasViernes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver más" />
+            </LinearLayout>
+
+            <!-- SABADO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="SABADO"
+                android:gravity="center"
+                android:background="#CCCC00"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tormenta electrica 10C. Mas informacion:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerMasSabado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver más" />
+            </LinearLayout>
+
+            <!-- DOMINGO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30sp"
+                android:paddingEnd="30sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="DOMINGO"
+                android:gravity="center"
+                android:background="#CCCC00"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nublado 18C. Mas informacion:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerMasDomingo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ver más" />
+            </LinearLayout>
+
+            <!-- BOTÓN SALIR -->
+            <Button
+                android:id="@+id/idBtnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="CERRAR SESION" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

@@ -23,28 +23,37 @@ class LoginActivity : AppCompatActivity() {
             insets
 
         }
-        var btnRegistrarse = findViewById<Button>(R.id.idBtnRegistrarse)
-        var btnIniciarSesion = findViewById<Button>(R.id.idBtnIniciarSesion)
+        val btnRegistrarse = findViewById<Button>(R.id.idBtnRegistrarse)
+        val btnIniciarSesion = findViewById<Button>(R.id.idBtnIniciarSesion)
         btnRegistrarse.setOnClickListener { navigateToRegister() }
-        btnIniciarSesion.setOnClickListener { navigateToIniciarSesion()}
+        btnIniciarSesion.setOnClickListener { navigateToIniciarSesion() }
     }
-    private fun navigateToRegister(){
-        var intentRegister = Intent(this, RegisterActivity::class.java)
+
+    private fun navigateToRegister() {
+        val intentRegister = Intent(this, RegisterActivity::class.java)
         startActivity(intentRegister)
     }
-    private fun navigateToIniciarSesion(){
-        var email1 = findViewById<EditText>(R.id.idUsuario)
-        var emailVerification = intent.extras?.getString("validEmail")
-        var pass1 = findViewById<EditText>(R.id.idPassword)
-        var validPassword = intent.extras?.getString("validPass")
-        if(pass1.text.toString() != validPassword){
-            Toast.makeText(this, "Password no registrado, por favor cree una cuenta", Toast.LENGTH_LONG).show()
-        }
-        else if(email1.text.toString() != emailVerification){
-            Toast.makeText(this, "Email no registrado, por favor cree una cuenta", Toast.LENGTH_LONG).show()
 
-        }else{
-            var intent = Intent(this, IniciarSesionActivity::class.java)
+    private fun navigateToIniciarSesion() {
+        val email1 = findViewById<EditText>(R.id.idUsuario)
+        val emailVerification = intent.extras?.getString("validEmail")
+        val pass1 = findViewById<EditText>(R.id.idPassword)
+        val validPassword = intent.extras?.getString("validPass")
+        if (pass1.text.toString() != validPassword) {
+            Toast.makeText(
+                this,
+                "Password no registrado, por favor cree una cuenta",
+                Toast.LENGTH_LONG
+            ).show()
+        } else if (email1.text.toString() != emailVerification) {
+            Toast.makeText(
+                this,
+                "Email no registrado, por favor cree una cuenta",
+                Toast.LENGTH_LONG
+            ).show()
+
+        } else {
+            val intent = Intent(this, IniciarSesionActivity::class.java)
             startActivity(intent)
         }
     }

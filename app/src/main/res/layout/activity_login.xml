@@ -5,62 +5,63 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:orientation="vertical"
     android:layout_gravity="center_horizontal"
-    >
+    android:orientation="vertical"
+    tools:context="com.example.tp.LoginActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text ="Ingrese Su Email"
-        android:textSize="20sp"
-        android:layout_marginStart="5dp"/>
+        android:layout_marginStart="5dp"
+        android:text="Ingrese Su Email"
+        android:textSize="20sp" />
+
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/idUsuario"
-        android:inputType="text"
-        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Escriba Aqui"/>
+        android:hint="Escriba Aqui"
+        android:inputType="text"
+        android:textSize="15sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text ="Ingrese Password"
-        android:textSize="20sp"
-        android:layout_marginStart="5dp"/>
+        android:layout_marginStart="5dp"
+        android:text="Ingrese Password"
+        android:textSize="20sp" />
 
     <EditText
+        android:id="@+id/idPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idPassword"
-        android:inputType="textPassword"
-        android:textSize="15sp"
         android:layout_margin="10dp"
         android:hint="Password"
-        />
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+
     <CheckBox
+        android:id="@+id/idCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recordar Usuario"
-        android:id="@+id/idCheckBox" />
+        android:text="Recordar Usuario" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <Button
+            android:id="@+id/idBtnRegistrarse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/idBtnRegistrarse"
             android:text="Crear Usuario" />
 
         <Button
+            android:id="@+id/idBtnIniciarSesion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/idBtnIniciarSesion"
-            android:text="Iniciar Sesion"/>
+            android:text="Iniciar Sesion" />
 
     </LinearLayout>
 </LinearLayout>

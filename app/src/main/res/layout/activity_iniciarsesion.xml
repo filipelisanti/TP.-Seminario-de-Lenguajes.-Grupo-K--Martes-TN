@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/celeste"
-    tools:context=".inside.IniciarSesionActivity">
+    tools:context="com.example.tp.inside.IniciarSesionActivity">
 
     <!-- Título fijo arriba -->
     <TextView

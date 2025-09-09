@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP">
         <activity
+            android:name=".inside.VerMasDomingoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inside.VerMasSabadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inside.VerMasViernesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inside.VerMasJuevesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inside.VerMasMiercolesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inside.VerMasMartesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inside.VerMasLunesActivity"
+            android:exported="false" />
+        <activity
             android:name=".inside.RegisterActivity"
             android:exported="false" />
         <activity

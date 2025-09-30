@@ -7,7 +7,7 @@
         android:title="TEMPERATURA ACTUAL"
         app:showAsAction="always"
         android:icon="@drawable/weather"
-        android:iconTint="@color/white"/>
+        android:iconTint="@color/rojo"/>
 
 
 </menu>

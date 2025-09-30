@@ -48,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.item_temperatura){
-            Toast.makeText(this, "LA CONCHA DE TU MADRE", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "---", Toast.LENGTH_SHORT).show()
         }
         return super.onOptionsItemSelected(item)
     }
@@ -61,22 +61,15 @@ class LoginActivity : AppCompatActivity() {
 
     private fun navigateToIniciarSesion() {
         val email1 = findViewById<EditText>(R.id.idUsuario)
-        val emailVerification = intent.extras?.getString("validEmail")
-        val pass1 = findViewById<EditText>(R.id.idPassword)
-        val validPassword = intent.extras?.getString("validPass")
-        if (pass1.text.toString() != validPassword) {
-            Toast.makeText(
-                this,
-                "Password no registrado, por favor cree una cuenta",
-                Toast.LENGTH_LONG
-            ).show()
-        } else if (email1.text.toString() != emailVerification) {
-            Toast.makeText(
-                this,
-                "Email no registrado, por favor cree una cuenta",
-                Toast.LENGTH_LONG
-            ).show()
 
+        val pass1 = findViewById<EditText>(R.id.idPassword)
+
+        if (email1==null || pass1==null) {
+            Toast.makeText(
+                this,
+                "COMPLETAR DATOS",
+                Toast.LENGTH_LONG
+            ).show()
         } else {
             val intent = Intent(this, IniciarSesionActivity::class.java)
             startActivity(intent)

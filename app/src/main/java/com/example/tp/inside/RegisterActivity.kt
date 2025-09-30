@@ -41,8 +41,7 @@ class RegisterActivity : AppCompatActivity() {
             val email = emValue.text.toString()
             val password = pass.text.toString()
             val intent = Intent(this, LoginActivity::class.java)
-            intent.putExtra("validEmail", email)
-            intent.putExtra("validPass", password)
+
             startActivity(intent)
         }else{
             Toast.makeText(this, "Las passwords no concuerdan", Toast.LENGTH_LONG).show()

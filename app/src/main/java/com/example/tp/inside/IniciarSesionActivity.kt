@@ -2,6 +2,8 @@ package com.example.tp.inside
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -44,6 +46,18 @@ class IniciarSesionActivity : AppCompatActivity() {
         val btnVerMasDomingo =
             findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.btnVerMasDomingo)
         btnVerMasDomingo.setOnClickListener { navigateToVerDomingo() }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.item_temperatura){
+            TODO("Realizar Accion")
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun navigateToLogin() {

@@ -1,95 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tp.inside.RegisterActivity"
     android:orientation="vertical"
-    android:layout_marginStart="10dp">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp">
-    </TextView>
+    tools:context="com.example.tp.inside.RegisterActivity"
+    android:background="@color/celeste">
 
-    <EditText
-        android:id="@+id/idNombreRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Escriba Aqui Su Nombre">
-    </EditText>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Apellido"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp">
-    </TextView>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/primary_toolbar" />
 
-    <EditText
-        android:id="@+id/idApellidoRegister"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escriba Aqui Su Apellido">
-    </EditText>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp">
-    </TextView>
-
-    <EditText
-        android:id="@+id/idEmailRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Escriba Aqui Su Email"
-        android:inputType="textEmailSubject">
-    </EditText>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp">
-    </TextView>
-
-    <EditText
-        android:id="@+id/idPasswordRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Escriba Password"
-        android:inputType="textPassword">
-    </EditText>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Confirmar Password"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp">
-    </TextView>
-
-    <EditText
-        android:id="@+id/idConfirmarPasswordRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Confirmar Password"
-        android:inputType="textPassword">
-    </EditText>
-
-    <Button
-        android:id="@+id/btnConfirmar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Confirmar"
-        android:layout_marginTop="20dp">
-    </Button>
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp">
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Nombre"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"></TextView>
+
+        <EditText
+            android:id="@+id/idNombreRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba Aqui Su Nombre"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Apellido"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"></TextView>
+
+        <EditText
+            android:id="@+id/idApellidoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba Aqui Su Apellido"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"></TextView>
+
+        <EditText
+            android:id="@+id/idEmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba Aqui Su Email"
+            android:inputType="textEmailSubject"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"></TextView>
+
+        <EditText
+            android:id="@+id/idPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba Password"
+            android:inputType="textPassword"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Confirmar Password"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="25sp"></TextView>
+
+        <EditText
+            android:id="@+id/idConfirmarPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar Password"
+            android:inputType="textPassword"></EditText>
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Confirmar"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"></Button>
+
+    </LinearLayout>
 </LinearLayout>

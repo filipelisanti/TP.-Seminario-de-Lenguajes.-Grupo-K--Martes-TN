@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -9,17 +8,11 @@
     android:background="@color/celeste"
     tools:context="com.example.tp.inside.IniciarSesionActivity">
 
-    <!-- Título fijo arriba -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CLIMA BUENOS AIRES"
-        android:textSize="25sp"
-        android:background="@color/white"
-        android:gravity="center"
-        android:padding="10dp" />
 
-    <!-- Scroll con todos los días -->
+    <include android:id="@+id/toolbar"
+        layout="@layout/primary_toolbar"/>
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -30,7 +23,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- LUNES -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +59,7 @@
                     android:text="Ver más" />
             </LinearLayout>
 
-            <!-- MARTES -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,7 +95,7 @@
                     android:text="Ver más" />
             </LinearLayout>
 
-            <!-- MIERCOLES -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,7 +132,7 @@
                     android:text="Ver más" />
             </LinearLayout>
 
-            <!-- JUEVES -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,7 +168,7 @@
                     android:text="Ver más" />
             </LinearLayout>
 
-            <!-- VIERNES -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -211,7 +204,7 @@
                     android:text="Ver más" />
             </LinearLayout>
 
-            <!-- SABADO -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -247,7 +240,7 @@
                     android:text="Ver más" />
             </LinearLayout>
 
-            <!-- DOMINGO -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -283,13 +276,16 @@
                     android:text="Ver más" />
             </LinearLayout>
 
-            <!-- BOTÓN SALIR -->
+
             <Button
                 android:id="@+id/idBtnSalir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="CERRAR SESION" />
+                android:text="CERRAR SESION"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginBottom="30dp"/>
 
         </LinearLayout>
     </ScrollView>

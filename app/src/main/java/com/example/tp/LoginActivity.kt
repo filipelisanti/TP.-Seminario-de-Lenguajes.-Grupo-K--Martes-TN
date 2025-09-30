@@ -2,6 +2,9 @@ package com.example.tp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -11,9 +14,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tp.inside.IniciarSesionActivity
 import com.example.tp.inside.RegisterActivity
-import com.example.tp.inside.TermsAndConditions
+import androidx.appcompat.widget.Toolbar
 
 class LoginActivity : AppCompatActivity() {
+    lateinit var toolbar: Toolbar
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,19 +29,31 @@ class LoginActivity : AppCompatActivity() {
             insets
 
         }
-       // val btnAceptarTerminos = findViewById<Button>(R.id.idBtnAceptar)
+
         val btnRegistrarse = findViewById<Button>(R.id.idBtnRegistrarse)
         val btnIniciarSesion = findViewById<Button>(R.id.idBtnIniciarSesion)
         btnRegistrarse.setOnClickListener { navigateToRegister() }
-        //btnAceptarTerminos.setOnClickListener { navigateToRegister() }
         btnIniciarSesion.setOnClickListener { navigateToIniciarSesion() }
+
+        toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+
     }
 
-    //private fun navigateToTermsAndConditions(){
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
 
-     //   val intentTermsAndConditions = Intent(this, TermsAndConditions::class.java)
-     //   startActivity(intentTermsAndConditions)
-    //}
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.item_temperatura){
+            Toast.makeText(this, "LA CONCHA DE TU MADRE", Toast.LENGTH_SHORT).show()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+
     private fun navigateToRegister() {
         val intentRegister = Intent(this, RegisterActivity::class.java)
         startActivity(intentRegister)

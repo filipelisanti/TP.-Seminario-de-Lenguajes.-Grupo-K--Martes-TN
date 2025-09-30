@@ -11,8 +11,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tp.LoginActivity
 import com.example.tp.R
-
+import androidx.appcompat.widget.Toolbar
 class RegisterActivity : AppCompatActivity() {
+    lateinit var toolbar: Toolbar
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,6 +26,11 @@ class RegisterActivity : AppCompatActivity() {
         }
         val btnConfirmar = findViewById<Button>(R.id.btnConfirmar)
         btnConfirmar.setOnClickListener { navigateToLogin() }
+
+        toolbar = findViewById(R.id.toolbar)
+
+
+
 
     }
     private fun navigateToLogin() {

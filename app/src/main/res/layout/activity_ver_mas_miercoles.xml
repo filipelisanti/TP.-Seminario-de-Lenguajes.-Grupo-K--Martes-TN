@@ -10,6 +10,8 @@
     android:layout_gravity="center"
     tools:context=".inside.VerMasLunesActivity">
 
+    <include android:id="@+id/toolbar"
+        layout="@layout/primary_toolbar"/>
 
     <TextView
         android:layout_gravity="center"

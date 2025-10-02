@@ -5,7 +5,7 @@
     <item
         android:id="@+id/item_temperatura"
         android:title="TEMPERATURA ACTUAL"
-        app:showAsAction="always"
+        app:showAsAction="never"
         android:icon="@drawable/weather"
         android:iconTint="@color/rojo"/>
 

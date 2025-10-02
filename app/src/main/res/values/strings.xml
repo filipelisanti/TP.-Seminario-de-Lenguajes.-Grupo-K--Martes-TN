@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">APP</string>
+    <string name="app_name">Clima</string>
     <string name="titulo1"> CLIMA BUENOS AIRES</string>
     <string name="user1"> usuario</string>
     <string name="pass1"> pass</string>

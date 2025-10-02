@@ -12,6 +12,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.tp.LoginActivity
 import com.example.tp.R
 import androidx.appcompat.widget.Toolbar
+import kotlin.toString
+
 class RegisterActivity : AppCompatActivity() {
     lateinit var toolbar: Toolbar
 
@@ -25,27 +27,42 @@ class RegisterActivity : AppCompatActivity() {
             insets
         }
         val btnConfirmar = findViewById<Button>(R.id.btnConfirmar)
-        btnConfirmar.setOnClickListener { navigateToLogin() }
+
+        btnConfirmar.setOnClickListener {
+            val pass = findViewById<EditText>(R.id.idPasswordRegister)
+            val emValue = findViewById<EditText>(R.id.idEmailRegister)
+            val email = emValue.text.toString()
+            val password = pass.text.toString()
+            val confirmarPass = findViewById<EditText>(R.id.idConfirmarPasswordRegister)
+
+            if (confirmarPass.text.toString() != pass.text.toString()) {
+                Toast.makeText(this, "Las passwords no concuerdan", Toast.LENGTH_LONG).show()
+            } else {
+
+
+                val dao = AppDatabase.getDatabase(applicationContext).usuarioDao()
+                val existente = dao.getUsuarioByName(email)
+
+
+                if (existente != null) {
+                    Toast.makeText(this, "El usuario ya existe", Toast.LENGTH_SHORT).show()
+                } else {
+                    var nuevoUser = Usuario(email, password)
+                    dao.insert(nuevoUser)
+                    Toast.makeText(this, "Usuario creado correctamente", Toast.LENGTH_SHORT).show()
+                    navigateToLogin()
+                }
+            }
+        }
 
         toolbar = findViewById(R.id.toolbar)
 
 
-
-
     }
+
     private fun navigateToLogin() {
-        val confirmarPass = findViewById<EditText>(R.id.idConfirmarPasswordRegister)
-        val pass = findViewById<EditText>(R.id.idPasswordRegister)
-        if (confirmarPass.text.toString() == pass.text.toString()) {
-            val emValue = findViewById<EditText>(R.id.idEmailRegister)
-            val email = emValue.text.toString()
-            val password = pass.text.toString()
-            val intent = Intent(this, LoginActivity::class.java)
-            intent.putExtra("validEmail", email)
-            intent.putExtra("validPass", password)
-            startActivity(intent)
-        }else{
-            Toast.makeText(this, "Las passwords no concuerdan", Toast.LENGTH_LONG).show()
-        }
+
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 }

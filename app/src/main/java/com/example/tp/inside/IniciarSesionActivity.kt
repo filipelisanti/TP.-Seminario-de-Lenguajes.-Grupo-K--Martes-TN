@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -46,6 +47,8 @@ class IniciarSesionActivity : AppCompatActivity() {
         val btnVerMasDomingo =
             findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.btnVerMasDomingo)
         btnVerMasDomingo.setOnClickListener { navigateToVerDomingo() }
+
+        saludarUsuario()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -61,7 +64,12 @@ class IniciarSesionActivity : AppCompatActivity() {
     }
 
     private fun navigateToLogin() {
+
         val intent = Intent(this, LoginActivity::class.java)
+        val preferencias = getSharedPreferences(resources.getString(R.string.sp_credenciales), MODE_PRIVATE)
+        val editor = preferencias.edit()
+        editor.clear()
+        editor.apply()
         startActivity(intent)
     }
 
@@ -98,6 +106,15 @@ class IniciarSesionActivity : AppCompatActivity() {
     private fun navigateToVerDomingo() {
         val intent8 = Intent(this, VerMasDomingoActivity::class.java)
         startActivity(intent8)
+    }
+
+    private fun saludarUsuario(){
+        val bundle : Bundle? = intent.extras
+        if (bundle != null)
+        {
+            val usuario = bundle?.getString("NOMBRE")
+            Toast.makeText(this, "Bienvenido/a $usuario", Toast.LENGTH_SHORT).show()
+        }
     }
 
 }

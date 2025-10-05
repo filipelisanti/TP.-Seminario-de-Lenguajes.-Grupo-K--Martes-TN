@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tp.inside.IniciarSesionActivity
 import com.example.tp.inside.RegisterActivity
+import com.example.tp.inside.TermsAndConditions
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,12 +24,19 @@ class LoginActivity : AppCompatActivity() {
             insets
 
         }
+       // val btnAceptarTerminos = findViewById<Button>(R.id.idBtnAceptar)
         val btnRegistrarse = findViewById<Button>(R.id.idBtnRegistrarse)
         val btnIniciarSesion = findViewById<Button>(R.id.idBtnIniciarSesion)
         btnRegistrarse.setOnClickListener { navigateToRegister() }
+        //btnAceptarTerminos.setOnClickListener { navigateToRegister() }
         btnIniciarSesion.setOnClickListener { navigateToIniciarSesion() }
     }
 
+    //private fun navigateToTermsAndConditions(){
+
+     //   val intentTermsAndConditions = Intent(this, TermsAndConditions::class.java)
+     //   startActivity(intentTermsAndConditions)
+    //}
     private fun navigateToRegister() {
         val intentRegister = Intent(this, RegisterActivity::class.java)
         startActivity(intentRegister)

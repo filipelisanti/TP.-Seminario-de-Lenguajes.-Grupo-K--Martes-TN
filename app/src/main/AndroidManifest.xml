@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,7 +15,9 @@
         android:roundIcon="@drawable/weather"
         android:supportsRtl="true"
         android:theme="@style/Theme.TP">
-
+        <activity
+            android:name=".inside.pruebaApiActivity"
+            android:exported="false" />
         <activity
             android:name=".inside.VerMasDomingoActivity"
             android:exported="false" />

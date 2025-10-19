@@ -6,14 +6,16 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 object RetrofitClient {
-    private val baseURL = "https://api.weatherstack.com/current"
+    private const val BASE_URL = "http://api.weatherstack.com/"
 
     private val moshi = Moshi.Builder()
-        .addLast( KotlinJsonAdapterFactory())
+        .addLast(KotlinJsonAdapterFactory())
         .build()
 
-    val retrofit = Retrofit.Builder()
-        .baseUrl(baseURL)
-        .addConverterFactory(MoshiConverterFactory.create(moshi))
-        .build()
+    val retrofit: Retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
+            .build()
+    }
 }

@@ -42,11 +42,11 @@ data class Current(
     @Json(name = "wind_degree") val windDegree: Int,
     @Json(name = "wind_dir") val windDir: String,
     @Json(name = "pressure") val pressure: Int,
-    @Json(name = "precip") val precip: Int,
+    @Json(name = "precip") val precip: Double, // Cambiar a Double
     @Json(name = "humidity") val humidity: Int,
     @Json(name = "cloudcover") val cloudcover: Int,
     @Json(name = "feelslike") val feelslike: Int,
     @Json(name = "uv_index") val uvIndex: Int,
     @Json(name = "visibility") val visibility: Int,
-    @Json(name = "is_day") val isDay: String
+    @Json(name = "is_day") val isDay: String? // Hacer nullable
 )

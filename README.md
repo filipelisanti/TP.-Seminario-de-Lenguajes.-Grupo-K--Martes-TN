@@ -11,9 +11,17 @@ INTEGRANTES Y FUNCIONALIDAD REALIZADA:
 ENTREGA 2:
 INTEGRANTES Y FUNCIONALIDAD REALIZADA:
 
--Santiago Filipeli. Funcionalidad realizada: funcionalidadMenu,Toolbar
+-Santiago Filipeli. Funcionalidad realizada: Menu,Toolbar
 
--Sebastian Damonte. Funcionalidad realizada:Funcionalidad Shared preferences, imagenesNativasAndroid
+-Sebastian Damonte. Funcionalidad realizada: Shared preferences, imagenesNativasAndroid
 
--Thiago Da Graca. Funcionalidad realizada: Funcionalidad Base de datos
+-Thiago Da Graca. Funcionalidad realizada: Base de datos
 
+ENTREGA 3:
+INTEGRANTES Y FUNCIONALIDAD REALIZADA:
+
+-Santiago Filipeli. Funcionalidad realizada: FuncionalidadNotificacion
+
+-Sebastian Damonte. Funcionalidad realizada: fragment/ejecucionHilo
+
+-Thiago Da Graca. Funcionalidad realizada: Funcionalidades ApiRest

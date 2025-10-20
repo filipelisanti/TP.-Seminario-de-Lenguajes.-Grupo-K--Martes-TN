@@ -1,16 +1,26 @@
 ----------GRUPO K----------
 
+<<<<<<< HEAD
 ENTREGA 1:
 INTEGRANTES Y FUNCIONALIDAD REALIZADA:
+=======
+ENTREGA 1: INTEGRANTES Y FUNCIONALIDAD REALIZADA:
+>>>>>>> GrupoK-sebastiandamonte-fragment/ejecucionHilo
 
 -Santiago Filipeli. Funcionalidad realizada:Activity iniciar sesion, funcionalidades en la actividad principal,
 
 -Sebastian Damonte. Funcionalidad realizada: Activitys de cada funcionalidad que despliega la actividad principal.
 
+<<<<<<< HEAD
 -Thiago Da Graca. Funcionalidad realizada:Activity del login, registrarse, funcionalidades entre si. 
 
 ENTREGA 2:
 INTEGRANTES Y FUNCIONALIDAD REALIZADA:
+=======
+-Thiago Da Graca. Funcionalidad realizada:Activity del login, registrarse, funcionalidades entre si.
+
+ENTREGA 2: INTEGRANTES Y FUNCIONALIDAD REALIZADA:
+>>>>>>> GrupoK-sebastiandamonte-fragment/ejecucionHilo
 
 -Santiago Filipeli. Funcionalidad realizada: Menu,Toolbar
 
@@ -18,8 +28,12 @@ INTEGRANTES Y FUNCIONALIDAD REALIZADA:
 
 -Thiago Da Graca. Funcionalidad realizada: Base de datos
 
+<<<<<<< HEAD
 ENTREGA 3:
 INTEGRANTES Y FUNCIONALIDAD REALIZADA:
+=======
+ENTREGA 3: INTEGRANTES Y FUNCIONALIDAD REALIZADA:
+>>>>>>> GrupoK-sebastiandamonte-fragment/ejecucionHilo
 
 -Santiago Filipeli. Funcionalidad realizada: FuncionalidadNotificacion
 

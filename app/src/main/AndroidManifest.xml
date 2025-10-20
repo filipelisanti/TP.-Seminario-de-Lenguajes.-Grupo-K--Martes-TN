@@ -15,35 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".inside.ClimaDetalleFragment"
-            android:exported="false" />
-        <activity
-            android:name=".inside.climaListFragment"
-            android:exported="false" />
+
         <activity
             android:name=".inside.pruebaApiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerMasDomingoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerMasSabadoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerMasViernesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerMasJuevesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerMasMiercolesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerMasMartesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VerMasLunesActivity"
             android:exported="false" />
         <activity
             android:name=".inside.RegisterActivity"

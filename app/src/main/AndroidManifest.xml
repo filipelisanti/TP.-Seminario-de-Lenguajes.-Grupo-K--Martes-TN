@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,30 +13,37 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/weather"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TP">
+        android:theme="@style/Theme.TP"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".inside.ClimaDetalleFragment"
+            android:exported="false" />
+        <activity
+            android:name=".inside.climaListFragment"
+            android:exported="false" />
         <activity
             android:name=".inside.pruebaApiActivity"
             android:exported="false" />
         <activity
-            android:name=".inside.VerMasDomingoActivity"
+            android:name=".VerMasDomingoActivity"
             android:exported="false" />
         <activity
-            android:name=".inside.VerMasSabadoActivity"
+            android:name=".VerMasSabadoActivity"
             android:exported="false" />
         <activity
-            android:name=".inside.VerMasViernesActivity"
+            android:name=".VerMasViernesActivity"
             android:exported="false" />
         <activity
-            android:name=".inside.VerMasJuevesActivity"
+            android:name=".VerMasJuevesActivity"
             android:exported="false" />
         <activity
-            android:name=".inside.VerMasMiercolesActivity"
+            android:name=".VerMasMiercolesActivity"
             android:exported="false" />
         <activity
-            android:name=".inside.VerMasMartesActivity"
+            android:name=".VerMasMartesActivity"
             android:exported="false" />
         <activity
-            android:name=".inside.VerMasLunesActivity"
+            android:name=".VerMasLunesActivity"
             android:exported="false" />
         <activity
             android:name=".inside.RegisterActivity"

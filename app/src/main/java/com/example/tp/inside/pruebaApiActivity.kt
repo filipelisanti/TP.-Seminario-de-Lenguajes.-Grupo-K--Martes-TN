@@ -21,11 +21,11 @@ class pruebaApiActivity : AppCompatActivity() {
 
     private lateinit var tvServicioRest: TextView
 
-    // Usamos un mapa para evitar duplicados
+
     private val weatherData = LinkedHashMap<String, String>()
     private var completedCalls = 0
 
-    // Lista de 10 distritos de Buenos Aires y alrededores
+
     private val distritos = listOf(
         "Lanús",
         "Lomas de Zamora",
@@ -57,11 +57,11 @@ class pruebaApiActivity : AppCompatActivity() {
 
         Log.d("API_TEST", "Iniciando llamadas a la API para ${distritos.size} distritos...")
 
-        // Hacer llamadas con delay de 3 segundos entre cada una
+
         distritos.forEachIndexed { index, distrito ->
             handler.postDelayed({
                 obtenerClimaDistrito(distrito)
-            }, index * 3000L) // 3000ms = 3 segundos de delay
+            }, index * 3000L)
         }
     }
 
@@ -83,18 +83,18 @@ class pruebaApiActivity : AppCompatActivity() {
                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                                 📍 $distritoOriginal
                                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                                🌡️ Temperatura: ${post.current.temperature}°C (Sensación: ${post.current.feelslike}°C)
-                                ☁️ Clima: ${post.current.weatherDescriptions.joinToString()}
-                                💧 Humedad: ${post.current.humidity}%
-                                💨 Viento: ${post.current.windSpeed} km/h ${post.current.windDir}
-                                👁️ Visibilidad: ${post.current.visibility} km
-                                🕐 Hora: ${post.location.localtime}
+                                 Temperatura: ${post.current.temperature}°C (Sensación: ${post.current.feelslike}°C)
+                                 Clima: ${post.current.weatherDescriptions.joinToString()}
+                                 Humedad: ${post.current.humidity}%
+                                 Viento: ${post.current.windSpeed} km/h ${post.current.windDir}
+                                 Visibilidad: ${post.current.visibility} km
+                                 Hora: ${post.location.localtime}
                                 
                             """.trimIndent()
 
                             // Usar el nombre ORIGINAL como clave única
                             weatherData[distritoOriginal] = weatherInfo
-                            Log.d("API_TEST", "✅ Datos recibidos para $distritoOriginal (API dice: ${post.location.name})")
+                            Log.d("API_TEST", " Datos recibidos para $distritoOriginal (API dice: ${post.location.name})")
                         } else {
                             weatherData[distritoOriginal] = "\n❌ $distritoOriginal: No se recibieron datos\n"
                             Log.e("API_TEST", "❌ Body null para $distritoOriginal")
@@ -122,23 +122,23 @@ class pruebaApiActivity : AppCompatActivity() {
     private fun actualizarPantalla() {
         completedCalls++
 
-        // Contar cuántos se completaron exitosamente
+
         val exitosos = weatherData.values.count { !it.contains("❌") }
 
-        // Actualizar el texto con los datos recibidos
+
         val header = """
             🌍 CLIMA EN BUENOS AIRES Y ALREDEDORES
             Completados: $completedCalls/${distritos.size} | Exitosos: $exitosos
             
         """.trimIndent()
 
-        // Unir todos los valores sin duplicados
+
         val contenido = weatherData.values.joinToString("\n")
         tvServicioRest.text = header + contenido
 
-        // Mensaje final cuando todas las llamadas terminaron
+
         if (completedCalls == distritos.size) {
-            Log.d("API_TEST", "✅ Todas las llamadas completadas: $exitosos exitosas, ${distritos.size - exitosos} fallidas")
+            Log.d("API_TEST", " Todas las llamadas completadas: $exitosos exitosas, ${distritos.size - exitosos} fallidas")
         }
     }
 

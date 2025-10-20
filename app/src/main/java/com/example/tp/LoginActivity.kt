@@ -130,25 +130,25 @@ class LoginActivity : AppCompatActivity() {
                     putString(getString(R.string.pass1), password)
                 }
 
-                // Check if we need to request permission
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                     if (checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS)
                         != PackageManager.PERMISSION_GRANTED
                     ) {
-                        // Store username and request permission, navigation will happen after response
+
                         pendingUsername = usuarioEncontrado.user
                         requestPermissions(arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), 101)
                         return
                     }
                 }
 
-                // Permission already granted or not needed
+
                 mostrarNotificacionRecordarUsuario()
                 Handler(Looper.getMainLooper()).postDelayed({
                     navigateToIniciarSesion(usuarioEncontrado.user)
                 }, 500)
             } else {
-                // No checkbox checked, navigate immediately
+
                 navigateToIniciarSesion(usuarioEncontrado.user)
             }
         } else {

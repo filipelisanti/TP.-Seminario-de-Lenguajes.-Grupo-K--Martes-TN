@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.databinding:compilerCommon:3.2.0-alpha11" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="androidx.databinding" artifactId="compilerCommon" version="3.2.0-alpha11" baseVersion="3.2.0-alpha11" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/compilerCommon/3.2.0-alpha11/682edce917eeb75967935af6d4bfd6e9d0394450/compilerCommon-3.2.0-alpha11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/compilerCommon/3.2.0-alpha11/70e9bfc2b7f7d4d21db224a2a5ab9ec1acf313f3/compilerCommon-3.2.0-alpha11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/compilerCommon/3.2.0-alpha11/bf1d26ba4fcd5374a219e40ff65281e6dc7800e3/compilerCommon-3.2.0-alpha11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

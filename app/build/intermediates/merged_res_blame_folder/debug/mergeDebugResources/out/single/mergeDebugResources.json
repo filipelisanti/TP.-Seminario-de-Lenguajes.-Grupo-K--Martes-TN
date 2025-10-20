@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_iniciarsesion.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_iniciarsesion.xml"
+    },
+    {
+        "merged": "com.example.tp.app-debug-61:/layout_fragment_clima_detalle.xml.flat",
+        "source": "com.example.tp.app-main-63:/layout/fragment_clima_detalle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_ver_mas_lunes.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_ver_mas_lunes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_primary_toolbar.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\primary_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_prueba_api.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_prueba_api.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_ver_mas_jueves.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_ver_mas_jueves.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_ver_mas_viernes.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_ver_mas_viernes.xml"
+    },
+    {
+        "merged": "com.example.tp.app-debug-61:/layout_activity_iniciarsesion.xml.flat",
+        "source": "com.example.tp.app-main-63:/layout/activity_iniciarsesion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\drawable_weather.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\drawable\\weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_ver_mas_domingo.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_ver_mas_domingo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_ver_mas_sabado.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_ver_mas_sabado.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_ver_mas_miercoles.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_ver_mas_miercoles.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\layout_activity_ver_mas_martes.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\layout\\activity_ver_mas_martes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tp.app-debug-61:/layout_fragment_clima_list.xml.flat",
+        "source": "com.example.tp.app-main-63:/layout/fragment_clima_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-debug-61:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Santi\\.gradle\\daemon\\8.13\\com.example.tp.app-main-63:\\xml\\backup_rules.xml"
+    }
+]

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amarillo">#DDFF00</color>
+    <color name="black">#FF000000</color>
+    <color name="celeste">#85CEEB</color>
+    <color name="rojo">#B02737</color>
+    <color name="toolbi">#3AAAF0</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Clima</string>
+    <string name="pass1">pass</string>
+    <string name="sp_credenciales">Credenciales</string>
+    <string name="titulo1">CLIMA BUENOS AIRES</string>
+    <string name="user1">usuario</string>
+    <style name="Base.Theme.TP" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.TP" parent="Base.Theme.TP"/>
+</resources>

@@ -169,7 +169,7 @@ class ClimaListFragment : Fragment() {
             val response: Response<PostDTO> = withContext(Dispatchers.IO) {
                 val api = RetrofitClient.retrofit.create(ApiEndpoints::class.java)
                 api.getCurrentWeather(
-                    apiKey = "8f135b552ef7865374c89f7cd38b926e",
+                    apiKey = "f4eb1e9ab00c11366775b245d2fa988c",
                     location = "${distrito.nombre}, Buenos Aires"
                 ).execute()
             }
